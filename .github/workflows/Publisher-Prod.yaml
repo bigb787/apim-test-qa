@@ -32,7 +32,7 @@ jobs:
   Push-Changes-To-APIM-Dev-Without-Commit-ID:
     if: ( github.event.inputs.COMMIT_ID_CHOICE == 'publish-all-artifacts-in-repo' )
     needs: get-commit
-    uses: ./.github/workflows/run-publisher-with-dev.yaml
+    uses: ./.github/workflows/Publisher-Prod-Run.yaml
     with:
       API_MANAGEMENT_ENVIRONMENT: dev # change this to match the dev environment created in settings
       API_MANAGEMENT_SERVICE_OUTPUT_FOLDER_PATH: apimartifacts # change this to the artifacts folder

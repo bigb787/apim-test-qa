@@ -4,7 +4,8 @@
 
  apiNames:
   - colors-api
-   backendNames:
+  
+ backendNames:
   - backendName1
   - backendName2
 

@@ -20,7 +20,7 @@ env:
   apiops_release_version: v6.0.1.4
   #By default, this will be Information but if you want something different you will need to add a variable in the Settings -> Environment -> Environment variables section
   Logging__LogLevel__Default: ${{ vars.LOG_LEVEL }}
-  # SERVICE_URL_DEV: dev-api.test.com
+  # SERVICE_URL_PROD: apim-test-qa.azure-api.net
 
 jobs:
   build:

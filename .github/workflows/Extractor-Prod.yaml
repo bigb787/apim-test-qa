@@ -160,7 +160,7 @@ jobs:
   create-pull-request:
     needs: extract
     runs-on: [ubuntu-latest]
-    environment: dev
+    environment: PROD
     steps:
       - uses: actions/checkout@v4
           

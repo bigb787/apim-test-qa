@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">=3.0"
+  required_version = ">=2.0"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
@@ -10,4 +10,7 @@ terraform {
       version = "~>3.0"
     }
   }
+} 
+provider "azurerm" {
+  features {}
 }

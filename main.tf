@@ -15,7 +15,7 @@ resource "apimqatest" "azurerm_api_management_name" {
   upper   = false
 }
 
-resource "azurerm_api_management" "api" {
+resource "azurerm_api_management" "apimqatest" {
   name                = "apiservice${random_string.azurerm_api_management_name.result}"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
